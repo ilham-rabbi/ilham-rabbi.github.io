@@ -68,7 +68,16 @@ section h2 {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    width: 100%;}
+    width: 100%;
+}
+
+.reviews {background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+}
 
 ul {
     list-style: none;
@@ -107,4 +116,36 @@ footer {
 
 #adam{
     padding: 50px;
+}
+
+#image-gallery .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust columns */
+    gap: 10px; /* Space between images */
+    padding: 20px;
+    max-width: 100%; /* Ensures grid doesn't overflow the container */
+}
+
+#image-gallery .grid img {
+    width: 100%; /* Ensures image width fits the grid cell */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 200px; /* Limit the height of images in the grid */
+    object-fit: cover; /* Ensures the image covers the grid area */
+    border-radius: 5px;
+}
+
+#image-gallery .grid img:hover {
+    transform: scale(1.05);
+    border-color: #333;
+}
+
+#large-image-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#large-image {
+    max-width: 80%;
+    height: auto;
+    max-height: 1000px;
 }
